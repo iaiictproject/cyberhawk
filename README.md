@@ -1,18 +1,24 @@
 
-
 <div align="center">
 
 ![CyberHawk Recon](https://img.shields.io/badge/CyberHawk-Recon-red?style=for-the-badge)
 ![Version](https://img.shields.io/badge/version-4.0.0-blue?style=for-the-badge)
 ![Python](https://img.shields.io/badge/python-3.6+-green?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)
+![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Termux%20%7C%20Windows-lightgrey?style=for-the-badge)
 ![Status](https://img.shields.io/badge/status-active-success?style=for-the-badge)
+
+# 🦅 CyberHawk Recon
 
 **Professional Reconnaissance Tool for Security Researchers & Penetration Testers**
 
-[Installation](#-installation) • [Features](#-features) • [Usage](#-usage) • [Examples](#-examples) • [Documentation](#-documentation)
+[![GitHub stars](https://img.shields.io/github/stars/iaiictproject/cyberhawk?style=social)](https://github.com/iaiictproject/cyberhawk/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/iaiictproject/cyberhawk?style=social)](https://github.com/iaiictproject/cyberhawk/network/members)
+
+[Installation](#-installation) • [Quick Start](#-quick-start) • [Features](#-features) • [Usage](#-usage) • [Examples](#-examples) • [Documentation](#-documentation)
 
 </div>
+
 
 
 ## 📋 Overview
@@ -20,6 +26,7 @@
 CyberHawk Recon is a comprehensive reconnaissance tool designed for security professionals and penetration testers. It provides real results through multiple scanning modules including port scanning, subdomain discovery, web crawling, vulnerability detection, and technology fingerprinting.
 
 **Developed by:** IAIICT PROJECT DCT PROJECT GROUP 10
+
 
 ## ✨ Features
 
@@ -35,105 +42,348 @@ CyberHawk Recon is a comprehensive reconnaissance tool designed for security pro
 
 ### 🚀 Key Capabilities
 
-- **Multi-threaded Scanning**: Configurable thread pool for faster results
-- **Real-time Progress**: Live feedback during scanning operations
-- **Service Detection**: Identifies services running on open ports
-- **Security Headers Analysis**: Checks for missing security headers
-- **Exposed File Detection**: Finds sensitive files like .env, .git, robots.txt
-- **Subdomain Validation**: DNS resolution to confirm active subdomains
-- **Technology Fingerprinting**: Identifies CMS, frameworks, and web servers
-- **Color-coded Output**: Easy-to-read console output with color coding
+- ⚡ **Multi-threaded Scanning**: Configurable thread pool for faster results
+- 📊 **Real-time Progress**: Live feedback during scanning operations
+- 🔌 **Service Detection**: Identifies services running on open ports
+- 🛡️ **Security Headers Analysis**: Checks for missing security headers
+- 📁 **Exposed File Detection**: Finds sensitive files like .env, .git, robots.txt
+- 🌐 **Subdomain Validation**: DNS resolution to confirm active subdomains
+- 💻 **Technology Fingerprinting**: Identifies CMS, frameworks, and web servers
+- 🎨 **Color-coded Output**: Easy-to-read console output with color coding
+- 📝 **JSON Export**: Export results for further analysis
+
 
 ## 📦 Installation
 
-### Prerequisites
+### 📱 **Termux (Android)**
 
-- Python 3.6 or higher
-- pip package manager
+<details>
+<summary><b>Click to expand Termux Installation Guide</b></summary>
 
-### Quick Install
+#### Step-by-Step Installation
 
-# Clone the repository
+# 1. Update Termux packages
+pkg update && pkg upgrade -y
+
+# 2. Install required dependencies
+pkg install python git -y
+
+# 3. Install Python packages
+pkg install python-pip -y
+
+# 4. Clone the repository
+git clone https://github.com/iaiictproject/cyberhawk.git
+
+# 5. Navigate to the directory
+cd cyberhawk
+
+# 6. Install Python dependencies
+pip install -r requirements.txt
+
+# 7. Make executable
+chmod +x cyberhawk.py
+
+# 8. Run the tool
+python cyberhawk.py -h
+
+
+#### One-Click Installation Script
+
+Copy and paste this entire command:
+
+
+pkg update && pkg upgrade -y && pkg install python git python-pip -y && git clone https://github.com/iaiictproject/cyberhawk.git && cd cyberhawk && pip install -r requirements.txt && chmod +x cyberhawk.py && echo -e "\n\033[32m✓ CyberHawk installed successfully!\033[0m" && python cyberhawk.py -h
+
+
+#### Troubleshooting Termux
+
+If you encounter issues:
+
+# Fix pip issues
+pkg install python-pip
+pip install --upgrade pip
+
+# Fix permission issues
+termux-setup-storage
+
+# If Python version issues
+pkg install python3
+
+
+</details>
+
+
+
+### 🐧 **Linux (Ubuntu/Debian/Kali/Parrot)**
+
+<details>
+<summary><b>Click to expand Linux Installation Guide</b></summary>
+
+#### Step-by-Step Installation
+
+
+# 1. Update system packages
+sudo apt update && sudo apt upgrade -y
+
+# 2. Install Python and pip if not installed
+sudo apt install python3 python3-pip git -y
+
+# 3. Clone the repository
+git clone https://github.com/iaiictproject/cyberhawk.git
+
+# 4. Navigate to the directory
+cd cyberhawk
+
+# 5. Install Python dependencies
+pip3 install -r requirements.txt
+
+# 6. Make executable
+chmod +x cyberhawk.py
+
+# 7. (Optional) Install globally
+sudo cp cyberhawk.py /usr/local/bin/cyberhawk
+
+# 8. Run the tool
+python3 cyberhawk.py -h
+
+
+#### One-Click Installation Script
+
+Copy and paste this entire command:
+
+
+sudo apt update && sudo apt upgrade -y && sudo apt install python3 python3-pip git -y && git clone https://github.com/iaiictproject/cyberhawk.git && cd cyberhawk && pip3 install -r requirements.txt && chmod +x cyberhawk.py && echo -e "\n\033[32m✓ CyberHawk installed successfully!\033[0m" && python3 cyberhawk.py -h
+
+
+#### 📦 Arch Linux Installation
+
+
+# Install dependencies
+sudo pacman -S python python-pip git
+
+# Clone and install
+git clone https://github.com/iaiictproject/cyberhawk.git
+cd cyberhawk
+pip install -r requirements.txt
+chmod +x cyberhawk.py
+
+# Run
+python cyberhawk.py -h
+
+
+#### 🔴 Fedora/RHEL/CentOS
+
+
+# Install dependencies
+sudo dnf install python3 python3-pip git -y
+
+# Clone and install
+git clone https://github.com/iaiictproject/cyberhawk.git
+cd cyberhawk
+pip3 install -r requirements.txt
+chmod +x cyberhawk.py
+
+# Run
+python3 cyberhawk.py -h
+
+
+</details>
+
+
+### 💻 **Windows**
+
+<details>
+<summary><b>Click to expand Windows Installation Guide</b></summary>
+
+#### Option 1: Using Command Prompt (CMD)
+
+
+# 1. Install Python from https://www.python.org/downloads/
+# Make sure to check "Add Python to PATH" during installation
+
+# 2. Open Command Prompt as Administrator
+
+# 3. Install Git from https://git-scm.com/download/win
+
+# 4. Clone repository
+git clone https://github.com/iaiictproject/cyberhawk.git
+
+# 5. Navigate to directory
+cd cyberhawk
+
+# 6. Install dependencies
+pip install -r requirements.txt
+
+# 7. Run the tool
+python cyberhawk.py -h
+
+
+#### Option 2: Using PowerShell
+
+# Run PowerShell as Administrator
+
+# Install Python dependencies
+pip install requests colorama urllib3
+
+# Clone repository
+git clone https://github.com/iaiictproject/cyberhawk.git
+
+# Navigate
+cd cyberhawk
+
+# Run
+python cyberhawk.py -h
+
+
+#### Option 3: Complete Batch Script
+
+Create a file `install.bat` with:
+
+@echo off
+echo Installing CyberHawk Recon...
+echo.
+echo Checking Python installation...
+python --version >nul 2>&1
+if errorlevel 1 (
+    echo Python not found! Please install Python from https://www.python.org/downloads/
+    pause
+    exit /b 1
+)
+
+echo Installing dependencies...
+pip install -r requirements.txt
+
+echo.
+echo Clone repository...
 git clone https://github.com/iaiictproject/cyberhawk.git
 cd cyberhawk
 
-# Install dependencies
-pip install -r requirements.txt
+echo.
+echo CyberHawk installed successfully!
+echo.
+echo Run: python cyberhawk.py -h
+pause
 
-# Make executable
-chmod +x cyberhawk.py
+#### 💡 Windows Tips
+
+- Use **Windows Terminal** for better experience
+- Run as Administrator for full functionality
+- Disable Windows Defender temporarily if issues occur
+
+</details>
+
+### 🐍 **Docker Installation** (Bonus)
+
+<details>
+<summary><b>Click to expand Docker Installation</b></summary>
+
+# Build Docker image
+docker build -t cyberhawk .
+
+# Run the container
+docker run -it cyberhawk
+
+# Or run with target
+docker run -it cyberhawk python cyberhawk.py -t example.com --all
 
 
+Create `Dockerfile`:
 
-## 🚀 Usage
+FROM python:3.9-alpine
+
+RUN apk add --no-cache git
+
+WORKDIR /app
+
+RUN git clone https://github.com/iaiictproject/cyberhawk.git .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+ENTRYPOINT ["python", "cyberhawk.py"]
+CMD ["-h"]
+
+</details>
+
+
+## 🚀 Quick Start
+
+### One-Click Installation (All Platforms)
+
+#### **Termux (Android)**
+
+pkg update && pkg upgrade -y && pkg install python git python-pip -y && git clone https://github.com/iaiictproject/cyberhawk.git && cd cyberhawk && pip install -r requirements.txt && chmod +x cyberhawk.py && python cyberhawk.py -h
+
+
+#### **Linux (Ubuntu/Debian/Kali)**
+sudo apt update && sudo apt upgrade -y && sudo apt install python3 python3-pip git -y && git clone https://github.com/iaiictproject/cyberhawk.git && cd cyberhawk && pip3 install -r requirements.txt && chmod +x cyberhawk.py && python3 cyberhawk.py -h
+
+
+#### **Windows (PowerShell)**
+git clone https://github.com/iaiictproject/cyberhawk.git; cd cyberhawk; pip install -r requirements.txt; python cyberhawk.py -h
+
+## 🛠️ Usage
 
 ### Basic Syntax
+
 
 python cyberhawk.py -t <target> [options]
 
 
 ### Available Options
 
-| Option | Description |
-|--------|-------------|
-| `-t, --target` | Target domain (e.g., example.com) |
-| `--threads` | Number of threads (default: 50) |
-| `--basic` | Run basic reconnaissance |
-| `--ports` | Perform port scanning |
-| `--subdomains` | Discover subdomains |
-| `--crawl` | Web crawl for hidden paths |
-| `--vulns` | Scan for vulnerabilities |
-| `--tech` | Detect technology stack |
-| `--all` | Run all modules |
-| `-h, --help` | Show help menu |
+| Option | Description | Example |
+|--------|-------------|---------|
+| `-t, --target` | Target domain | `-t example.com` |
+| `--threads` | Number of threads (default: 50) | `--threads 100` |
+| `--basic` | Run basic reconnaissance | `--basic` |
+| `--ports` | Perform port scanning | `--ports` |
+| `--subdomains` | Discover subdomains | `--subdomains` |
+| `--crawl` | Web crawl for hidden paths | `--crawl` |
+| `--vulns` | Scan for vulnerabilities | `--vulns` |
+| `--tech` | Detect technology stack | `--tech` |
+| `--all` | Run all modules | `--all` |
+| `-h, --help` | Show help menu | `-h` |
+
+
 
 ## 📊 Examples
 
-### 1. Basic Reconnaissance
+### 🎯 Basic Reconnaissance
+
 
 python cyberhawk.py -t example.com --basic
 
 
-Performs port scanning and technology detection.
+### 🎯 Complete Reconnaissance
 
-### 2. Complete Reconnaissance
 
 python cyberhawk.py -t example.com --all
 
-
-Runs all modules: ports, subdomains, crawling, vulnerabilities, and tech detection.
-
-### 3. Custom Thread Count
+### 🎯 Custom Thread Count
 
 
 python cyberhawk.py -t example.com --all --threads 100
 
 
-Increases thread pool for faster scanning.
+### 🎯 Subdomain Discovery Only
 
-### 4. Subdomain Discovery Only
 
 python cyberhawk.py -t example.com --subdomains
 
 
-Finds and validates subdomains.
-
-### 5. Vulnerability Assessment
+### 🎯 Vulnerability Assessment
 
 
 python cyberhawk.py -t example.com --vulns
 
 
-Checks security headers and exposed files.
+### 🎯 Technology Fingerprinting
 
-### 6. Technology Fingerprinting
 
 python cyberhawk.py -t example.com --tech
 
-Identifies web server, CMS, and frameworks.
 
 ## 📋 Sample Output
-
 
 ╔══════════════════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                                         ║
@@ -197,9 +447,20 @@ PORT     STATE      SERVICE
 
 > **⚠️ IMPORTANT**: This tool is designed for educational purposes and authorized security testing only. Users are solely responsible for ensuring they have proper authorization before scanning any target. Unauthorized scanning may violate laws and regulations in your jurisdiction.
 
+### 📜 Usage Policy
+
+1. **Only use on targets you own or have explicit permission to test**
+2. **Do not use for illegal activities**
+3. **Respect privacy and data protection laws**
+4. **Use responsibly and ethically**
+
+
+
 ## 🤝 Contributing
 
 We welcome contributions! Here's how you can help:
+
+### Development Process
 
 1. **Fork the repository**
 2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
@@ -209,47 +470,26 @@ We welcome contributions! Here's how you can help:
 
 ### Development Guidelines
 
-- Follow PEP 8 style guide
-- Add comments for complex logic
-- Update documentation for new features
-- Test thoroughly before submitting
+- ✅ Follow PEP 8 style guide
+- ✅ Add comments for complex logic
+- ✅ Update documentation for new features
+- ✅ Test thoroughly before submitting
+- ✅ Write meaningful commit messages
+
+### 🐛 Report Issues
+
+Found a bug? [Open an issue](https://github.com/iaiictproject/cyberhawk/issues) with:
+- Description of the issue
+- Steps to reproduce
+- Expected vs actual behavior
+- Screenshots if applicable
+- System information
+
+
 
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- IAIICT Project DCT Project Group 10
-- Open-source security community
-- Contributors and testers
-
-## 📞 Contact
-
-For issues, suggestions, or contributions:
-- **Open an Issue**: [GitHub Issues](https://github.com/iaiictproject/cyberhawk/issues)
-- **Email**: iaiictgroup10project@gmail.com
-
-
-
-<div align="center">
-  <sub>Built with ❤️ by IAIICT PROJECT DCT PROJECT GROUP 10</sub>
-</div>
-
-
-## 📁 Additional Files to Create
-
-### 1. **requirements.txt**
-Create this file in your repository root:
-
-
-requests>=2.28.0
-colorama>=0.4.6
-urllib3>=1.26.0
-
-
-### 2. **LICENSE**
-Create a MIT License file:
 
 
 MIT License
@@ -275,105 +515,182 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-### 3. **.gitignore**
-Create a `.gitignore` file:
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-ENV/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 
-# Virtual Environment
-venv/
-env/
-.env
+## 🙏 Acknowledgments
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+- IAIICT Project DCT Project Group 10
+- Open-source security community
+- All contributors and testers
+- HackerTarget API for subdomain discovery
 
-# Logs
-*.log
-*.out
 
-# OS
-.DS_Store
-Thumbs.db
+## 📞 Contact & Support
 
-# Reports
-reports/
-results/
-*.json
+### 📧 Email
+- **Project Team**: project.dct@iaiict.edu
+- **Support**: support@iaiict.edu
 
-### 4. **setup.py** (Optional - for pip installation)
-from setuptools import setup, find_packages
+### 🌐 Social Links
+- **GitHub**: [@iaiictproject](https://github.com/iaiictproject)
+- **Twitter**: [@IAIICT](https://twitter.com/IAIICT)
+- **Website**: [www.iaiict.edu](https://www.iaiict.edu)
 
-setup(
-    name="cyberhawk-recon",
-    version="4.0.0",
-    author="IAIICT PROJECT DCT PROJECT GROUP 10",
-    description="Professional Reconnaissance Tool for Security Researchers",
-    long_description=open("README.md").read(),
-    long_description_content_type="text/markdown",
-    url="https://github.com/iaiictproject/cyberhawk",
-    packages=find_packages(),
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-        "Topic :: Security",
-    ],
-    python_requires=">=3.6",
-    install_requires=[
-        "requests>=2.28.0",
-        "colorama>=0.4.6",
-        "urllib3>=1.26.0",
-    ],
-    entry_points={
-        "console_scripts": [
-            "cyberhawk=cyberhawk:main",
-        ],
-    },
+### 💬 Community
+- Join our [Discord Server](https://discord.gg/cyberhawk)
+- Follow on [LinkedIn](https://linkedin.com/company/iaiict)
+
+
+
+## 📚 Documentation
+
+- [User Guide](docs/USER_GUIDE.md)
+- [API Reference](docs/API.md)
+- [FAQ](docs/FAQ.md)
+- [Contributing Guide](CONTRIBUTING.md)
+
+
+## 📊 Project Stats
+
+![GitHub contributors](https://img.shields.io/github/contributors/iaiictproject/cyberhawk)
+![GitHub last commit](https://img.shields.io/github/last-commit/iaiictproject/cyberhawk)
+![GitHub issues](https://img.shields.io/github/issues/iaiictproject/cyberhawk)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/iaiictproject/cyberhawk)
+
+
+
+<div align="center">
+  <sub>Built with ❤️ by IAIICT PROJECT DCT PROJECT GROUP 10</sub>
+  <br>
+  <sub>⭐ Star this repo if you find it useful! ⭐</sub>
+</div>
+
+
+
+## 📁 Additional Files
+
+### **requirements.txt**
+
+requests>=2.28.0
+colorama>=0.4.6
+urllib3>=1.26.0
+
+
+### **install.sh** (Linux/Termux One-Click Installer)
+#!/bin/bash
+
+# CyberHawk Installer Script
+# Auto-detects platform (Linux/Termux)
+
+echo "🦅 CyberHawk Recon Installer"
+echo "=============================="
+echo ""
+
+# Detect platform
+if [ -d "$PREFIX" ]; then
+    # Termux
+    echo "📱 Detected: Termux (Android)"
+    pkg update && pkg upgrade -y
+    pkg install python git python-pip -y
+else
+    # Linux
+    echo "🐧 Detected: Linux"
+    sudo apt update && sudo apt upgrade -y
+    sudo apt install python3 python3-pip git -y
+fi
+
+echo ""
+echo "📦 Cloning repository..."
+git clone https://github.com/iaiictproject/cyberhawk.git
+
+cd cyberhawk
+
+echo "📥 Installing dependencies..."
+if [ -d "$PREFIX" ]; then
+    pip install -r requirements.txt
+else
+    pip3 install -r requirements.txt
+fi
+
+echo "🔧 Setting permissions..."
+chmod +x cyberhawk.py
+
+echo ""
+echo "✅ CyberHawk installed successfully!"
+echo ""
+echo "🚀 Quick start:"
+echo "  python cyberhawk.py -t example.com --all"
+echo ""
+echo "📖 Help:"
+echo "  python cyberhawk.py -h"
+
+
+### **install.bat** (Windows Installer)
+@echo off
+color 0A
+echo ========================================
+echo    🦅 CyberHawk Recon Installer
+echo ========================================
+echo.
+
+echo Checking Python installation...
+python --version >nul 2>&1
+if errorlevel 1 (
+    echo [ERROR] Python not found!
+    echo Please install Python from: https://www.python.org/downloads/
+    echo Make sure to check "Add Python to PATH"
+    pause
+    exit /b 1
 )
 
+echo [OK] Python found
+echo.
 
-## 🚀 Quick Setup Commands
+echo Installing Git...
+where git >nul 2>&1
+if errorlevel 1 (
+    echo [WARNING] Git not found!
+    echo Download Git from: https://git-scm.com/download/win
+    pause
+)
 
-After creating these files, run:
+echo Cloning repository...
+git clone https://github.com/iaiictproject/cyberhawk.git
+cd cyberhawk
 
-# Initialize git repository
-git init
+echo Installing dependencies
+pip install -r requirements.txt
 
-# Add all files
-git add .
+echo.
+echo ========================================
+echo    ✅ Installation Complete!
+echo ========================================
+echo.
+echo Quick Start:
+echo   python cyberhawk.py -t example.com --all
+echo.
+echo Help:
+echo   python cyberhawk.py -h
+echo.
+pause
 
-# Commit changes
-git commit -m "Initial commit: CyberHawk Recon v4.0.0"
+### **Dockerfile** (Optional)
+FROM python:3.9-slim
 
-# Add remote
-git remote add origin https://github.com/iaiictproject/cyberhawk.git
+LABEL maintainer="IAIICT PROJECT DCT PROJECT GROUP 10"
+LABEL version="4.0.0"
+LABEL description="CyberHawk Recon - Professional Reconnaissance Tool"
 
-# Push to GitHub
-git push -u origin main
+RUN apt-get update && apt-get install -y git && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+RUN git clone https://github.com/iaiictproject/cyberhawk.git .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+ENTRYPOINT ["python", "cyberhawk.py"]
+CMD ["-h"]
+
+
