@@ -1,0 +1,21 @@
+{
+  "target": "example.com",
+  "ip": "172.66.147.243",
+  "timestamp": "2026-06-13T05:07:11.368383",
+  "summary": {
+    "subdomains": 1,
+    "open_ports": 0,
+    "vulnerabilities": 0
+  },
+  "subdomains": [
+    {
+      "subdomain": "www.example.com",
+      "ip": "172.66.147.243",
+      "status": 200,
+      "title": "Example Domain",
+      "alive": true
+    }
+  ],
+  "open_ports": [],
+  "vulnerabilities": []
+}

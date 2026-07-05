@@ -1,0 +1,58 @@
+{
+  "target": "example.com",
+  "timestamp": "2026-06-13T04:45:05.031658",
+  "duration": "0:00:10.222204",
+  "ip": "172.66.147.243",
+  "subdomains": {
+    "alive": [
+      {
+        "subdomain": "www.example.com",
+        "alive": true,
+        "resolves": true,
+        "ip": "172.66.147.243",
+        "status_code": 200,
+        "title": "Example Domain",
+        "body": "<!doctype html><html lang=\"en\"><head><title>Example Domain</title><link rel=\"icon\" href=\"data:,\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><style>body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}</style></head><body><div><h1>Example Domain</h1><p>This domain is for use in documentation examples without needing permission. Avoid use in operations.</p><p><a href=\"https://iana.o"
+      }
+    ],
+    "dead": [],
+    "old": [
+      {
+        "subdomain": "20mail2.example.com",
+        "alive": false,
+        "resolves": false,
+        "ip": null,
+        "status_code": null,
+        "title": null,
+        "body": ""
+      }
+    ],
+    "takeover": []
+  },
+  "open_ports": [
+    {
+      "port": 443,
+      "state": "open"
+    },
+    {
+      "port": 80,
+      "state": "open"
+    },
+    {
+      "port": 8443,
+      "state": "open"
+    },
+    {
+      "port": 8080,
+      "state": "open"
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "type": "Missing Security Headers",
+      "url": "https://www.example.com",
+      "severity": "Medium",
+      "details": "Missing: Strict-Transport-Security, Content-Security-Policy, X-Frame-Options, X-Content-Type-Options"
+    }
+  ]
+}

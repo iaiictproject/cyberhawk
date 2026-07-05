@@ -1,0 +1,473 @@
+{
+  "target": "yahoo.com",
+  "timestamp": "2026-06-13T06:43:43.214369",
+  "duration": "670.58s",
+  "cname": {
+    "has_cname": false,
+    "cname": null,
+    "is_cdn": false
+  },
+  "cdn": {
+    "detected": [],
+    "has_waf": false
+  },
+  "origin_ips": [
+    "98.136.96.75",
+    "67.195.228.94",
+    "13.248.158.7"
+  ],
+  "tech_stack": {
+    "web_servers": [],
+    "frameworks": [],
+    "cms": [],
+    "javascript": [
+      "React",
+      "jQuery"
+    ],
+    "analytics": [
+      "Google Analytics"
+    ],
+    "cdn": [
+      "CloudFront"
+    ],
+    "cloud_providers": [
+      "AWS",
+      "DigitalOcean"
+    ],
+    "languages": [
+      "Node.js",
+      "Ruby"
+    ]
+  },
+  "port_scans": {
+    "13.248.158.7": [
+      {
+        "port": 80,
+        "service": "HTTP",
+        "state": "open"
+      },
+      {
+        "port": 443,
+        "service": "HTTPS",
+        "state": "open"
+      }
+    ]
+  },
+  "subdomains": {
+    "found": [],
+    "alive": [],
+    "hidden": [
+      "login.yahoo.com",
+      "news.yahoo.com",
+      "tickets.yahoo.com",
+      "gateway.yahoo.com",
+      "images.yahoo.com",
+      "shopping.yahoo.com",
+      "topic.yahoo.com",
+      "athena.yahoo.com",
+      "secure.yahoo.com",
+      "ns5.yahoo.com",
+      "pixel.yahoo.com",
+      "data.yahoo.com",
+      "ns3.yahoo.com",
+      "checkout.yahoo.com",
+      "ns4.yahoo.com",
+      "rc.yahoo.com",
+      "insights.yahoo.com",
+      "ns1.yahoo.com"
+    ],
+    "dead": [
+      {
+        "subdomain": "news.yahoo.com",
+        "ip": "87.248.114.11",
+        "alive": false
+      },
+      {
+        "subdomain": "tickets.yahoo.com",
+        "ip": "13.248.158.7",
+        "alive": false
+      },
+      {
+        "subdomain": "gateway.yahoo.com",
+        "ip": "13.248.158.7",
+        "alive": false
+      },
+      {
+        "subdomain": "topic.yahoo.com",
+        "ip": "13.248.158.7",
+        "alive": false
+      },
+      {
+        "subdomain": "athena.yahoo.com",
+        "ip": "98.136.189.48",
+        "alive": false
+      },
+      {
+        "subdomain": "secure.yahoo.com",
+        "ip": "13.248.158.7",
+        "alive": false
+      },
+      {
+        "subdomain": "ns5.yahoo.com",
+        "ip": "202.165.97.53",
+        "alive": false
+      },
+      {
+        "subdomain": "data.yahoo.com",
+        "ip": "66.228.173.54",
+        "alive": false
+      },
+      {
+        "subdomain": "ns3.yahoo.com",
+        "ip": "27.123.42.42",
+        "alive": false
+      },
+      {
+        "subdomain": "ns4.yahoo.com",
+        "ip": "98.138.11.157",
+        "alive": false
+      },
+      {
+        "subdomain": "rc.yahoo.com",
+        "ip": "76.223.84.192",
+        "alive": false
+      },
+      {
+        "subdomain": "insights.yahoo.com",
+        "ip": "87.248.100.137",
+        "alive": false
+      },
+      {
+        "subdomain": "ns1.yahoo.com",
+        "ip": "68.180.131.16",
+        "alive": false
+      }
+    ]
+  },
+  "directories": [
+    {
+      "url": "https://yahoo.com/robots.txt",
+      "status": 200,
+      "size": 1624
+    },
+    {
+      "url": "https://yahoo.com/phpinfo.php",
+      "status": 200,
+      "size": 1767597
+    }
+  ],
+  "javascript_endpoints": [],
+  "cves": [
+    {
+      "technology": "React",
+      "version": "Unknown",
+      "cve": "CVE-1999-0454",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-1999-0454"
+    },
+    {
+      "technology": "React",
+      "version": "Unknown",
+      "cve": "CVE-2002-0956",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2002-0956"
+    },
+    {
+      "technology": "React",
+      "version": "Unknown",
+      "cve": "CVE-2006-4073",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2006-4073"
+    },
+    {
+      "technology": "React",
+      "version": "Unknown",
+      "cve": "CVE-2007-1724",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2007-1724"
+    },
+    {
+      "technology": "React",
+      "version": "Unknown",
+      "cve": "CVE-2007-4244",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2007-4244"
+    },
+    {
+      "technology": "jQuery",
+      "version": "Unknown",
+      "cve": "CVE-2007-2379",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2007-2379"
+    },
+    {
+      "technology": "jQuery",
+      "version": "Unknown",
+      "cve": "CVE-2011-4969",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2011-4969"
+    },
+    {
+      "technology": "jQuery",
+      "version": "Unknown",
+      "cve": "CVE-2013-4634",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-4634"
+    },
+    {
+      "technology": "jQuery",
+      "version": "Unknown",
+      "cve": "CVE-2013-1942",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-1942"
+    },
+    {
+      "technology": "jQuery",
+      "version": "Unknown",
+      "cve": "CVE-2013-2022",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-2022"
+    },
+    {
+      "technology": "Google Analytics",
+      "version": "Unknown",
+      "cve": "CVE-2014-9174",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-9174"
+    },
+    {
+      "technology": "Google Analytics",
+      "version": "Unknown",
+      "cve": "CVE-2016-7401",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-7401"
+    },
+    {
+      "technology": "Google Analytics",
+      "version": "Unknown",
+      "cve": "CVE-2017-2171",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-2171"
+    },
+    {
+      "technology": "Google Analytics",
+      "version": "Unknown",
+      "cve": "CVE-2009-5158",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-5158"
+    },
+    {
+      "technology": "Google Analytics",
+      "version": "Unknown",
+      "cve": "CVE-2020-20626",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-20626"
+    },
+    {
+      "technology": "CloudFront",
+      "version": "Unknown",
+      "cve": "CVE-2020-36363",
+      "severity": "CRITICAL",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-36363"
+    },
+    {
+      "technology": "CloudFront",
+      "version": "Unknown",
+      "cve": "CVE-2025-57682",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-57682"
+    },
+    {
+      "technology": "AWS",
+      "version": "Unknown",
+      "cve": "CVE-2004-1812",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2004-1812"
+    },
+    {
+      "technology": "AWS",
+      "version": "Unknown",
+      "cve": "CVE-2004-2138",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2004-2138"
+    },
+    {
+      "technology": "AWS",
+      "version": "Unknown",
+      "cve": "CVE-2005-0116",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2005-0116"
+    },
+    {
+      "technology": "AWS",
+      "version": "Unknown",
+      "cve": "CVE-2005-0362",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2005-0362"
+    },
+    {
+      "technology": "AWS",
+      "version": "Unknown",
+      "cve": "CVE-2005-0363",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2005-0363"
+    },
+    {
+      "technology": "DigitalOcean",
+      "version": "Unknown",
+      "cve": "CVE-2013-6480",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-6480"
+    },
+    {
+      "technology": "DigitalOcean",
+      "version": "Unknown",
+      "cve": "CVE-2020-2126",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-2126"
+    },
+    {
+      "technology": "DigitalOcean",
+      "version": "Unknown",
+      "cve": "CVE-2024-29795",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-29795"
+    },
+    {
+      "technology": "DigitalOcean",
+      "version": "Unknown",
+      "cve": "CVE-2025-49047",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-49047"
+    },
+    {
+      "technology": "DigitalOcean",
+      "version": "Unknown",
+      "cve": "CVE-2026-24516",
+      "severity": "HIGH",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24516"
+    },
+    {
+      "technology": "Node.js",
+      "version": "Unknown",
+      "cve": "CVE-2011-5037",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2011-5037"
+    },
+    {
+      "technology": "Node.js",
+      "version": "Unknown",
+      "cve": "CVE-2012-2330",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-2330"
+    },
+    {
+      "technology": "Node.js",
+      "version": "Unknown",
+      "cve": "CVE-2013-4660",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-4660"
+    },
+    {
+      "technology": "Node.js",
+      "version": "Unknown",
+      "cve": "CVE-2013-4450",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-4450"
+    },
+    {
+      "technology": "Node.js",
+      "version": "Unknown",
+      "cve": "CVE-2013-7379",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-7379"
+    },
+    {
+      "technology": "Ruby",
+      "version": "Unknown",
+      "cve": "CVE-2004-0755",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2004-0755"
+    },
+    {
+      "technology": "Ruby",
+      "version": "Unknown",
+      "cve": "CVE-2004-0983",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2004-0983"
+    },
+    {
+      "technology": "Ruby",
+      "version": "Unknown",
+      "cve": "CVE-2005-1992",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2005-1992"
+    },
+    {
+      "technology": "Ruby",
+      "version": "Unknown",
+      "cve": "CVE-2005-2337",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2005-2337"
+    },
+    {
+      "technology": "Ruby",
+      "version": "Unknown",
+      "cve": "CVE-2006-1931",
+      "severity": "MEDIUM",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2006-1931"
+    }
+  ],
+  "vulnerabilities": {
+    "default_creds": [],
+    "log4j": [],
+    "shellshock": [],
+    "misconfigurations": []
+  },
+  "api_intel": {
+    "securitytrails": {
+      "subdomains": [
+        "finance",
+        "news",
+        "developer",
+        "help",
+        "search",
+        "sports",
+        "sp.analytics",
+        "answers",
+        "groups",
+        "uk.news",
+        "my",
+        "tv",
+        "uk.finance",
+        "fr.news",
+        "ca.finance",
+        "smallbusiness",
+        "maps",
+        "ca.news",
+        "in.news",
+        "sg.news"
+      ],
+      "count": 2000
+    },
+    "urlscan": {
+      "total_scans": 100,
+      "malicious": false,
+      "latest_scan": "2026-06-13T13:54:15.580Z"
+    },
+    "shodan_67.195.228.94": {
+      "hostnames": [
+        "mtaproxy1.free.mail.vip.gq1.yahoo.com"
+      ],
+      "ports": [
+        25
+      ],
+      "vulnerabilities": [],
+      "tags": [
+        "starttls"
+      ],
+      "org": "Oath Holdings Inc."
+    }
+  },
+  "security_risk": {}
+}
